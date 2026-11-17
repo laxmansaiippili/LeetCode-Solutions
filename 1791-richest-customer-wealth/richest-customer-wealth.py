@@ -6,5 +6,8 @@ class Solution(object):
         """
         maxsum=0;
         for i in range(len(accounts)):
-            maxsum=max(maxsum,sum(accounts[i]));
+            sum=0;
+            for j in range(len(accounts[0])):
+                sum=sum+accounts[i][j];
+            maxsum=max(sum,maxsum);
         return maxsum;
